@@ -12,7 +12,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8;
+            background-color: #F0F4F8;
         }
         .chart-container {
             position: relative;
@@ -57,6 +57,21 @@
             border-radius: 50%;
             z-index: 10;
         }
+        .module-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -81,6 +96,19 @@
                 <p class="text-gray-600">
                     This is the final payable amount after a GST redemption of ₹60,000 from the total project price of ₹5,50,000.
                 </p>
+            </section>
+
+            <section id="efficiency-stat" class="mt-12">
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center">
+                        <p class="text-gray-600">Our solution is projected to deliver a significant impact across your business.</p>
+                    </div>
+                     <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 text-center flex flex-col items-center justify-center col-span-1 md:col-span-2 lg:col-span-3">
+                         <div class="text-7xl md:text-8xl font-black text-gray-800 tracking-tight" style="color: #7A5195;">40-50%</div>
+                         <p class="text-2xl font-bold text-gray-600 mt-2">Process Efficiency Improvement</p>
+                         <p class="text-sm text-gray-500 mt-1 max-w-2xl">This is achieved by automating manual workflows, reducing errors, and creating a single source of truth across all business functions.</p>
+                     </div>
+                 </div>
             </section>
             
             <section id="challenges" class="mt-12">
@@ -137,18 +165,32 @@
                 </div>
             </section>
 
+            <section id="why-odoo" class="mt-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Why Odoo ERP? A Strategic Choice</h2>
+                    <p class="text-gray-600 mt-2">Odoo provides a perfect balance of functionality, flexibility, and cost-effectiveness compared to other solutions.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="font-semibold text-center text-lg mb-4">ERP Feature Comparison</h3>
+                    <p class="text-sm text-center text-gray-500 mb-4">This chart visually compares Odoo's key differentiators against legacy systems (SAP/Oracle) and simpler, lower-cost solutions (Zoho/Tally).</p>
+                    <div class="chart-container">
+                        <canvas id="comparisonChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
             <section id="modules" class="mt-12">
                  <div class="text-center mb-8">
                     <h2 class="text-3xl font-bold">Project Scope: Core Modules</h2>
                     <p class="text-gray-600 mt-2">A strategic selection of modules to deliver immediate and impactful benefits.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#003F5C;">Sales Management</h3><p class="text-sm text-gray-600 mt-1">Automate the sales cycle and gain real-time visibility into your pipeline.</p></div>
-                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#374C80;">Purchase Management</h3><p class="text-sm text-gray-600 mt-1">Optimize procurement and vendor relationships for cost efficiency.</p></div>
-                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#7A5195;">Inventory & Warehouse</h3><p class="text-sm text-gray-600 mt-1">Real-time stock visibility to prevent shortages and reduce costs.</p></div>
-                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#BC5090;">Manufacturing</h3><p class="text-sm text-gray-600 mt-1">Manage production planning and quality control for operational excellence.</p></div>
-                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#EF5675;">Accounting & Finance</h3><p class="text-sm text-gray-600 mt-1">Centralize financial operations for improved compliance and control.</p></div>
-                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#FF764A;">HR & Payroll</h3><p class="text-sm text-gray-600 mt-1">Manage the complete employee lifecycle with automated efficiency.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"><h3 class="font-bold text-lg" style="color:#003F5C;">Sales Management</h3><p class="text-sm text-gray-600 mt-1">Automate the sales cycle and gain real-time visibility into your pipeline.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"><h3 class="font-bold text-lg" style="color:#374C80;">Purchase Management</h3><p class="text-sm text-gray-600 mt-1">Optimize procurement and vendor relationships for cost efficiency.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"><h3 class="font-bold text-lg" style="color:#7A5195;">Inventory & Warehouse</h3><p class="text-sm text-gray-600 mt-1">Real-time stock visibility to prevent shortages and reduce costs.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"><h3 class="font-bold text-lg" style="color:#BC5090;">Manufacturing</h3><p class="text-sm text-gray-600 mt-1">Manage production planning and quality control for operational excellence.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"><h3 class="font-bold text-lg" style="color:#EF5675;">Accounting & Finance</h3><p class="text-sm text-gray-600 mt-1">Centralize financial operations for improved compliance and control.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"><h3 class="font-bold text-lg" style="color:#FF764A;">HR & Payroll</h3><p class="text-sm text-gray-600 mt-1">Manage the complete employee lifecycle with automated efficiency.</p></div>
                 </div>
             </section>
             
@@ -171,6 +213,39 @@
                         <div class="chart-container">
                             <canvas id="recurringCostsChart"></canvas>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="slas" class="mt-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Service Level Agreements (SLAs)</h2>
+                    <p class="text-gray-600 mt-2">Our commitment to continuous support and quick issue resolution.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="font-bold text-lg" style="color:#003F5C;">Critical Issues</h3>
+                        <p class="text-sm text-gray-500">System Down</p>
+                        <p class="text-3xl font-bold mt-2" style="color:#7A5195;">4 Hrs</p>
+                        <p class="text-sm text-gray-600 mt-1">Response Time</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="font-bold text-lg" style="color:#374C80;">High Priority</h3>
+                        <p class="text-sm text-gray-500">Workflow Blocked</p>
+                        <p class="text-3xl font-bold mt-2" style="color:#BC5090;">8 Hrs</p>
+                        <p class="text-sm text-gray-600 mt-1">Response Time</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="font-bold text-lg" style="color:#7A5195;">Medium Priority</h3>
+                        <p class="text-sm text-gray-500">Minor Bugs</p>
+                        <p class="text-3xl font-bold mt-2" style="color:#EF5675;">2-3 Days</p>
+                        <p class="text-sm text-gray-600 mt-1">Resolution Time</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="font-bold text-lg" style="color:#BC5090;">Enhancements</h3>
+                        <p class="text-sm text-gray-500">New Features</p>
+                        <p class="text-3xl font-bold mt-2" style="color:#FFA600;">Project-Based</p>
+                        <p class="text-sm text-gray-600 mt-1">Agreement</p>
                     </div>
                 </div>
             </section>
@@ -339,6 +414,73 @@
                                 }
                                 return label;
                             }
+                        }
+                    }
+                }
+            }
+        });
+        
+        const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
+        const comparisonChart = new Chart(comparisonCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Cost', 'Flexibility', 'Implementation Speed', 'User Experience', 'Scalability'],
+                datasets: [{
+                    label: 'Odoo',
+                    data: [5, 5, 4, 5, 5],
+                    fill: true,
+                    backgroundColor: 'rgba(55, 76, 128, 0.2)',
+                    borderColor: '#374C80',
+                    pointBackgroundColor: '#374C80',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#374C80'
+                }, {
+                    label: 'SAP / Oracle',
+                    data: [1, 2, 1, 2, 5],
+                    fill: true,
+                    backgroundColor: 'rgba(188, 80, 144, 0.2)',
+                    borderColor: '#BC5090',
+                    pointBackgroundColor: '#BC5090',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#BC5090'
+                }, {
+                    label: 'Zoho / Tally',
+                    data: [5, 3, 5, 4, 2],
+                    fill: true,
+                    backgroundColor: 'rgba(255, 166, 0, 0.2)',
+                    borderColor: '#FFA600',
+                    pointBackgroundColor: '#FFA600',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#FFA600'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: {
+                        borderWidth: 2
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 5
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
                         }
                     }
                 }
