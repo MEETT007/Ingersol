@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrowwth Innovations | ERP Proposal for Ingersoll Rand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #374C80, #7A5195);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            bottom: -1.5rem;
+            width: 2px;
+            background-color: #374C80;
+        }
+        .timeline-item:last-child::before {
+            display: none;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: calc(1rem - 9px);
+            top: 1.5rem;
+            height: 20px;
+            width: 20px;
+            background-color: #FFA600;
+            border: 3px solid #f0f4f8;
+            border-radius: 50%;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <header class="text-center py-12">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-800 tracking-tight">
+                A Strategic Proposal to <span class="gradient-text">Transform Operations</span> at Ingersoll Rand
+            </h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                Implementing a unified Odoo ERP solution to drive efficiency, unlock data-driven insights, and foster sustainable growth.
+            </p>
+        </header>
+        
+        <main>
+            <section id="investment" class="bg-white rounded-2xl shadow-lg p-6 md:p-10 text-center">
+                <h2 class="text-xl font-bold text-gray-500 uppercase tracking-wider">Final Proposed Investment</h2>
+                <div class="my-4 text-7xl md:text-8xl font-extrabold" style="color: #003F5C;">
+                    ₹4,90,000
+                </div>
+                <p class="text-gray-600">
+                    This is the final payable amount after a GST redemption of ₹60,000 from the total project price of ₹5,50,000.
+                </p>
+            </section>
+            
+            <section id="challenges" class="mt-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Addressing Key Operational Challenges</h2>
+                    <p class="text-gray-600 mt-2">Our solution is engineered to solve the critical inefficiencies hindering growth.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="text-4xl mb-3" style="color: #BC5090;">&#128452;</div>
+                        <h3 class="font-semibold text-lg">Fragmented Systems</h3>
+                        <p class="text-sm text-gray-500 mt-1">Data silos across sales, finance, and inventory lead to duplicated efforts and inconsistent reporting.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="text-4xl mb-3" style="color: #EF5675;">&#9997;</div>
+                        <h3 class="font-semibold text-lg">Manual Processes</h3>
+                        <p class="text-sm text-gray-500 mt-1">Reliance on manual data entry for orders and quotes increases errors and slows response times.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="text-4xl mb-3" style="color: #FF764A;">&#128279;</div>
+                        <h3 class="font-semibold text-lg">Limited Integration</h3>
+                        <p class="text-sm text-gray-500 mt-1">Lack of a unified view limits accurate forecasting and supply chain optimization.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="text-4xl mb-3" style="color: #FFA600;">&#128200;</div>
+                        <h3 class="font-semibold text-lg">Scalability Issues</h3>
+                        <p class="text-sm text-gray-500 mt-1">Current systems are not flexible enough to support future expansion or acquisitions seamlessly.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="solution" class="mt-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">The Solution: A Unified Odoo ERP Platform</h2>
+                    <p class="text-gray-600 mt-2">Connecting every facet of your business for unparalleled synergy and control.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                        <div class="text-center p-4 rounded-lg bg-gray-100 w-full md:w-auto">
+                           <p class="font-bold text-lg" style="color: #374C80;">CORE MODULES</p>
+                           <p class="text-xs text-gray-500">Sales, Inventory, HR, Finance, Manufacturing & More</p>
+                        </div>
+                         <div class="text-5xl font-thin" style="color: #7A5195;">&rarr;</div>
+                        <div class="text-center p-4 rounded-lg bg-blue-100 w-full md:w-auto">
+                           <p class="font-bold text-2xl" style="color: #003F5C;">Odoo ERP</p>
+                           <p class="text-sm text-gray-600">Single Source of Truth</p>
+                        </div>
+                        <div class="text-5xl font-thin" style="color: #7A5195;">&rarr;</div>
+                        <div class="text-center p-4 rounded-lg bg-gray-100 w-full md:w-auto">
+                           <p class="font-bold text-lg" style="color: #374C80;">BUSINESS OUTCOMES</p>
+                           <p class="text-xs text-gray-500">Efficiency, Scalability, Data-Driven Decisions</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="modules" class="mt-12">
+                 <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Project Scope: Core Modules</h2>
+                    <p class="text-gray-600 mt-2">A strategic selection of modules to deliver immediate and impactful benefits.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#003F5C;">Sales Management</h3><p class="text-sm text-gray-600 mt-1">Automate the sales cycle and gain real-time visibility into your pipeline.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#374C80;">Purchase Management</h3><p class="text-sm text-gray-600 mt-1">Optimize procurement and vendor relationships for cost efficiency.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#7A5195;">Inventory & Warehouse</h3><p class="text-sm text-gray-600 mt-1">Real-time stock visibility to prevent shortages and reduce costs.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#BC5090;">Manufacturing</h3><p class="text-sm text-gray-600 mt-1">Manage production planning and quality control for operational excellence.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#EF5675;">Accounting & Finance</h3><p class="text-sm text-gray-600 mt-1">Centralize financial operations for improved compliance and control.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6"><h3 class="font-bold text-lg" style="color:#FF764A;">HR & Payroll</h3><p class="text-sm text-gray-600 mt-1">Manage the complete employee lifecycle with automated efficiency.</p></div>
+                </div>
+            </section>
+            
+            <section id="pricing-visuals" class="mt-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Visualizing Your Investment</h2>
+                    <p class="text-gray-600 mt-2">A transparent breakdown of upfront and long-term costs.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="font-semibold text-center text-lg mb-4">Initial Investment Breakdown</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">The initial cost is primarily driven by essential implementation and configuration services, ensuring the platform is tailored to your specific workflows from day one.</p>
+                        <div class="chart-container">
+                            <canvas id="investmentBreakdownChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="font-semibold text-center text-lg mb-4">First-Year vs. Recurring Costs</h3>
+                        <p class="text-sm text-center text-gray-500 mb-4">This chart highlights the significant value provided in the first year compared to the predictable and manageable recurring costs for licensing, hosting, and support.</p>
+                        <div class="chart-container">
+                            <canvas id="recurringCostsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="timeline" class="mt-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold">Accelerated 2-3 Month Implementation Timeline</h2>
+                    <p class="text-gray-600 mt-2">A proven, phased approach to ensure a rapid and successful deployment.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <div class="relative pl-8">
+                        <div class="timeline-item pb-10">
+                            <div class="timeline-dot"></div>
+                            <h4 class="font-bold text-lg" style="color:#003F5C;">Weeks 1-2: Discovery</h4>
+                            <p class="text-sm text-gray-600">Requirement Gathering & Analysis</p>
+                        </div>
+                        <div class="timeline-item pb-10">
+                             <div class="timeline-dot"></div>
+                            <h4 class="font-bold text-lg" style="color:#374C80;">Weeks 3-4: Design</h4>
+                            <p class="text-sm text-gray-600">System Design & Fit-Gap Analysis</p>
+                        </div>
+                        <div class="timeline-item pb-10">
+                             <div class="timeline-dot"></div>
+                            <h4 class="font-bold text-lg" style="color:#7A5195;">Weeks 5-6: Build</h4>
+                            <p class="text-sm text-gray-600">Customization & Development</p>
+                        </div>
+                        <div class="timeline-item pb-10">
+                            <div class="timeline-dot"></div>
+                            <h4 class="font-bold text-lg" style="color:#BC5090;">Weeks 7-8: Migration</h4>
+                             <p class="text-sm text-gray-600">Secure Data Migration</p>
+                        </div>
+                         <div class="timeline-item pb-10">
+                            <div class="timeline-dot"></div>
+                            <h4 class="font-bold text-lg" style="color:#EF5675;">Weeks 8-10: Validation</h4>
+                             <p class="text-sm text-gray-600">User Training & Testing (UAT)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4 class="font-bold text-lg" style="color:#FF764A;">Week 11+: Go-Live & Support</h4>
+                            <p class="text-sm text-gray-600">Deployment and Ongoing Maintenance</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="text-center mt-16 py-8 border-t border-gray-200">
+                <h3 class="text-2xl font-bold">Ready to Begin?</h3>
+                <p class="text-gray-600 my-3">Let's initiate this transformative project. Upon your approval, we will schedule a kick-off meeting to begin our collaborative journey.</p>
+                <p class="font-semibold text-lg" style="color: #003F5C;">Ingrowth Innovations</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        function wrapLabel(label, maxWidth) {
+            if (label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+    
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const brilliantBluesPalette = ['#003F5C', '#7A5195', '#EF5675', '#FFA600'];
+
+        const implementationCost = 250000;
+        const customizationCost = 62500;
+        
+        const investmentCtx = document.getElementById('investmentBreakdownChart').getContext('2d');
+        new Chart(investmentCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Implementation Services', 'Customization Charges'],
+                datasets: [{
+                    label: 'Initial Investment',
+                    data: [implementationCost, customizationCost],
+                    backgroundColor: brilliantBluesPalette,
+                    borderColor: '#f0f4f8',
+                    borderWidth: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                         callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        const initialInvestmentTotal = 550000;
+        const recurringTotal = 90000 + 120000 + 46875;
+
+        const recurringCtx = document.getElementById('recurringCostsChart').getContext('2d');
+        new Chart(recurringCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Total First-Year Investment', 'Total Recurring Annual Costs'],
+                datasets: [{
+                    label: 'Cost in INR',
+                    data: [initialInvestmentTotal, recurringTotal],
+                    backgroundColor: ['#374C80', '#BC5090'],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                     x: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '₹' + (value / 1000) + 'k';
+                            }
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            callback: function(value, index, values) {
+                                return wrapLabel(this.getLabelForValue(value), 16);
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback,
+                           label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.x !== null) {
+                                    label += new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(context.parsed.x);
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
